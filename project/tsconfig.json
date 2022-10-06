@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES6",
+    "outDir": "./built", // ts결과물이 어디에 들어갈지
+    "moduleResolution": "Node", // promise인식 시켜주기위함
+    "lib": ["ES2015", "DOM", "DOM.Iterable"], // library 속성
+    "noImplicitAny": true
+  },
+  "include": ["./src/**/*"] // 어떤 폴더를 대상으로 ts를 컴파일 시킬것인지
+  // "exclude": ["node_modules", "dist"]
+}
