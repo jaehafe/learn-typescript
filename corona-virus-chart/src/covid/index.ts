@@ -1,40 +1,41 @@
 export interface Country {
   Country: string;
   CountryCode: string;
-  Date: string;
-  NewConfirmed: number;
-  NewDeaths: number;
-  NewRecovered: number;
-  Premium: any;
   Slug: string;
+  NewConfirmed: number;
   TotalConfirmed: number;
+  NewDeaths: number;
   TotalDeaths: number;
+  NewRecovered: number;
   TotalRecovered: number;
+  Date: Date;
+  Premium: any;
 }
 
-export interface Global {
+interface Global {
   NewConfirmed: number;
-  NewDeaths: number;
-  NewRecovered: number;
   TotalConfirmed: number;
+  NewDeaths: number;
   TotalDeaths: number;
+  NewRecovered: number;
   TotalRecovered: number;
+  Date: Date;
 }
 
 export interface CovidSummaryResponse {
   Countries: Country[];
-  Date: string;
+  Date: Date;
   Global: Global;
   Message: string;
 }
 
-interface CountrySummaryInfo {
+export interface CountrySummaryInfo {
   Cases: number;
   City: string;
   CityCode: string;
   Country: string;
   CountryCode: string;
-  Date: Date;
+  Date?: Date;
   Lat: string;
   Lon: string;
   Province: string;
