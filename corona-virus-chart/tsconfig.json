@@ -9,8 +9,9 @@
     "checkJs": true,
     "lib": ["es2015", "DOM", "DOM.Iterable"],
     "noImplicitAny": true,
-    "sourceMap": true
-    // "strict": true
+    "sourceMap": true,
+    "strict": true
+    // "strictFunctionTypes": true // strict 에서 기본으로 설정됨
   },
   "include": ["./src/**/*"] // 어떤 파일을 js로 변환할 것인지, src 폴더 밑에 모든 파일 대상 변환
 }
